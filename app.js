@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.status(200).send('hello, CI/CD is missing');
+    res.status(200).send('Hello, CI/CD is working!');
 })
 
 module.exports = app;
