@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.status(200).send('Hello, CI/CD is working!');
+    res.status(200).send('Hello, CI/CD is automated!');
 })
 
 if (require.main === module) {
