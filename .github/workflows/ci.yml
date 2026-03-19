@@ -20,4 +20,5 @@ jobs:
         cache: 'npm'
 
     - run: npm install
-    - run: npm test
+    - run: chmod +x node_modules/.bin/jest  # Manually add permissions during the build
+    - run: npx jest
