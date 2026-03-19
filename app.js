@@ -5,4 +5,8 @@ app.get('/', (req, res) => {
     res.status(200).send('Hello, CI/CD is working!');
 })
 
+if (require.main === module) {
+    app.listen(3000, () => console.log('Server started'));
+}
+
 module.exports = app;
